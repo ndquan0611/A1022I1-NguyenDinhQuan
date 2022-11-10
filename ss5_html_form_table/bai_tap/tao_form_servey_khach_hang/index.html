@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>lấy servey khách hàng</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid;
+                text-align: center;
+            }
+
+            tr {
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>MARKET RESEARCH SURVEY</h1>
+            <p>Please take a few moments to complete this satisfaction survey.</p>
+            <p>What is your age range?</p>
+            <input type="text" name="name" /><br />
+            <p>What is your yearly income range?</p>
+            <select>
+                <option>$0-$25000</option>
+                <option>$25000-$50000</option>
+                <option>$50000-100000</option>
+                <option>$100000</option></select
+            ><br />
+            <p>Gender Identity</p>
+            <input type="radio" name="gender" />Male<br />
+            <input type="radio" name="gender" />Female<br />
+            <input type="radio" name="gender" />Nonbinary<br />
+            <input type="radio" name="gender" />Other<br />
+            <input type="text" name="dienvao" /><br />
+            <p>
+                Which of the following products have your purchased in the last 2 months. Please
+                check all that apply.
+            </p>
+            <input type="checkbox" value="Daily" />Daily<br />
+            <input type="checkbox" value="Weekly" />Weekly<br />
+            <input type="checkbox" value="Monthly" />Monthly<br />
+            <p>What would you pay for the new product?</p>
+            $<input type="text" name="dolar" />.<input type="text" name="cen" /><br />
+            <p>DoLar Cen</p>
+            <br />
+            <p>What features would you like to see in the new product.</p>
+            <br />
+            <textarea rows="6" cols="70"> </textarea><br />
+            <p>Please rate your level of agreement with the following statement.</p>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Strongly disagree</td>
+                    <td>Disagree</td>
+                    <td>Agree</td>
+                    <td>Strongly Agree</td>
+                </tr>
+                <tr>
+                    <th>Our products are priced fairly</th>
+                    <br />
+                    <td><input type="radio" name="gender" />1</td>
+                    <td><input type="radio" name="gender" />2</td>
+                    <td><input type="radio" name="gender" />3</td>
+                    <td><input type="radio" name="gender" />4</td>
+                </tr>
+                <tr>
+                    <th>Our products are high quality</th>
+                    <br />
+                    <td><input type="radio" name="gender" />1</td>
+                    <td><input type="radio" name="gender" />2</td>
+                    <td><input type="radio" name="gender" />3</td>
+                    <td><input type="radio" name="gender" />4</td>
+                </tr>
+                <tr>
+                    <th>You would recommend our product to a friend or coworker</th>
+                    <br />
+                    <td><input type="radio" name="gender" />1</td>
+                    <td><input type="radio" name="gender" />2</td>
+                    <td><input type="radio" name="gender" />3</td>
+                    <td><input type="radio" name="gender" />4</td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
