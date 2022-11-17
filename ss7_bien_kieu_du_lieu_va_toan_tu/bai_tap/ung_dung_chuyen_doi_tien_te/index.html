@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./main.css" />
+        <title>Ung Dung Chuyen Doi Tien Te</title>
+    </head>
+    <body>
+        <div class="app">
+            <form class="form">
+                <div class="form-card">
+                    <label for="" class="form-label">Amount</label>
+                    <input type="text" class="form-input" value="1" />
+                </div>
+                <div class="form-card">
+                    <label for="" class="form-label">From Currency</label>
+                    <select class="form-select" id="select1">
+                        <option value="1">Vietnamese</option>
+                        <option value="2">USD</option>
+                    </select>
+                </div>
+                <div class="form-card">
+                    <label for="" class="form-label">To Currency</label>
+                    <select class="form-select" id="select2">
+                        <option value="1">Vietnamese</option>
+                        <option value="2">USD</option>
+                    </select>
+                </div>
+                <button class="form-btn">Convert</button>
+            </form>
+            <p class="result">Result: <span></span></p>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+</html>

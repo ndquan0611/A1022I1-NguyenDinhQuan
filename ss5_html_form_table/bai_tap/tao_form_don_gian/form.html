@@ -15,14 +15,14 @@
 
         body {
             margin-top: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            text-align: center;
             background-color: rgb(114, 243, 243);
         }
 
         .wrapper {
             width: 600px;
+            margin: 0 auto;
             padding: 10px;
             background-color: #fff;
         }
@@ -57,7 +57,7 @@
         }
     </style>
     <body>
-        <form action="" class="wrapper">
+        <form action="" class="wrapper" >
             <div class="header">
                 <h2>Sở thích của tôi</h2>
             </div>
@@ -79,6 +79,7 @@
                             grid-template-columns: repeat(3, 1fr);
                             gap: 10px;
                             text-align: left;
+                            color: orange;
                         "
                     >
                         <div><input type="checkbox" /> <span>Thể thao</span></div>
