@@ -2,8 +2,8 @@ const result = document.querySelector('.result span');
 const btnElement = document.querySelectorAll('.form-card button');
 
 function calculator(e) {
-    const inputElement1 = parseInt(document.querySelector('#form-input1').value);
-    const inputElement2 = parseInt(document.querySelector('#form-input2').value);
+    const inputElement1 = parseFloat(document.querySelector('#form-input1').value);
+    const inputElement2 = parseFloat(document.querySelector('#form-input2').value);
     let sum = 0,
         sub = 0,
         mul = 0,
