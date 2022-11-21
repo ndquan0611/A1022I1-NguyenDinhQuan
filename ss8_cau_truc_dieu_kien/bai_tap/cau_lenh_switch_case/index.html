@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" />
+            <button>Tính số ngày</button>
+        </form>
+        <p></p>
+    </body>
+    <script>
+        const buttonElement = document.querySelector('button');
+
+        buttonElement.addEventListener('click', function (e) {
+            const inputElement = document.querySelector('input').value;
+            const pElement = document.querySelector('p');
+            let month = parseInt(inputElement);
+
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    pElement.innerText = `Tháng ${month} có 31 ngày`;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    pElement.innerText = `Tháng ${month} có 30 ngày`;
+                    break;
+                case 2:
+                    pElement.innerText = `Tháng ${month} có 28 hoặc 29 ngày`;
+                    break;
+                default:
+                    pElement.innerText = 'Nhập lại tháng';
+            }
+            e.preventDefault();
+        });
+    </script>
+</html>
