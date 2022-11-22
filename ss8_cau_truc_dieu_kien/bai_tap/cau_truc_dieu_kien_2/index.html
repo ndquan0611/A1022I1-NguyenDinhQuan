@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cấu trúc điều kiện 2</title>
+    </head>
+    <body></body>
+    <script>
+        /* Bai 1
+        let c = prompt('Nhập giá trị c: ');
+        let f = c * 9/5 + 32;
+        document.write(f);
+        */
+
+        /* Bai 2
+        let ft = prompt('Nhập giá trị m: ');
+        let m = ft / 3.2808;
+        document.write(m);
+        */
+
+        /* Bai 3
+        let a = prompt('Nhập a: ');
+        let S = a * a;
+        document.write(S);
+        */
+
+        /* Bai 4
+        let a = prompt('Nhập chiều dài a: ');
+        let b = prompt('Nhập chiều rộng b: ');
+        let s = a * b;
+        document.write(s);
+        */
+
+        /* Bai 5
+        let h = prompt("Nhập chiều cao h: ");
+        let a = prompt("Nhập chiều dài đáy a: ");
+        let s = 1/2 * a * h;
+        document.write(s);
+        */
+
+        /* Bai 6
+        let a = prompt('Nhập hệ só a: ');
+        let b = prompt('Nhập hệ số b: ');
+
+        if (a === 0) {
+            if (b === 0) {
+                document.write('Phương trình vô số nghiệm.');
+            } else {
+                document.write('Phương trình vô số nghiệm.');
+            }
+        } else {
+            document.write('Phương trình có nghiệm.');
+        }
+        */
+
+        /* Bai 7
+        let a = prompt('Nhập hệ só a: ');
+        let b = prompt('Nhập hệ số b: ');
+        let c = prompt('Nhập hệ số c: ');
+        let d = b * b - 4 * a * c;
+
+        if (a === 0) {
+            if (b === 0) {
+                if (c === 0) {
+                    document.write('Phương trình vô số nghiệm.');
+                } else {
+                    document.write('Phương trình vô nghiệm.');
+                }
+            } else {
+                document.write('Phương trình có nghiệm duy nhất: ', -c / b);
+            }
+        } else {
+            if (d < 0) {
+                document.write('Phương trình vô nghiệm.');
+            } else if (d === 0) {
+                document.write('Phương trình có nghiệm kép la: ', -b / (2 * a));
+            } else {
+                document.write(
+                    'Phương trình có 2 nghiệm phân biệt là: ',
+                    (-b + sqrt(d)) / (2 * a),
+                    (-b - sqrt(d)) / (2 * a),
+                );
+            }
+        }
+        */
+
+        /* Bai 8 
+        let age = prompt('Nhập tuổi: ');
+        if (age < 18) {
+            document.write('Thiếu niên');
+        } else if (age >= 18 && age <= 39) {
+            document.write('Thanh niên');
+        } else if (age >= 40 && age <= 60) {
+            document.write('Trung niên');
+        } else {
+            document.write('Lao');
+        }
+        */
+
+        /* Bai 9
+        let a = parseFloat(prompt('Nhập cạnh a: '));
+        let b = parseFloat(prompt('Nhập cạnh b: '));
+        let c = parseFloat(prompt('Nhập cạnh c: '));
+        if (a + b > c && b + c > a && a + c > b) {
+            document.write('Là ba cạnh của một tam giác, ', a, b, c);
+        } else {
+            document.write('Không phải ba cạnh của một tam giác, ', a, b, c);
+        }
+        */
+    </script>
+</html>
