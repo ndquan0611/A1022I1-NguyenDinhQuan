@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hiển thị các số nguyên tố đầu tiên</title>
+    </head>
+    <body></body>
+    <script>
+        let numbers = +prompt('Nhập số lượng số nguyên: ');
+        let count = 0;
+        let N = 2;
+        if (numbers <= 0) {
+            alert("Vui lòng nhập giá trị nguyên dương!")
+        } else {
+            while(count < numbers) {
+                var isTrue = true;
+                for (let i = 2; i <= Math.sqrt(N); i++) {
+                    if (N % i === 0) {
+                        isTrue = false;
+                        break;
+                    }
+                }
+                if (isTrue) {
+                    count++;
+                    document.write(N + " ");
+                }
+                N++;
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vòng lặp 1</title>
+    </head>
+    <body>
+        <button onclick="handlePlay()">Chơi</button>
+    </body>
+    <script>
+        /* Bai 1
+        for (let i = 1; i < 100; i++) {
+            document.write(i + '<br/>');
+            if (i === 99) {
+                alert(i + ' Hoàn thành');
+            }
+        }
+        */
+
+        /* Bai 2
+        let temperature = parseFloat(prompt('Nhập nhiệt độ: '));
+
+        if (temperature > 100) {
+            document.write('Giảm nhiệt độ');
+        } else if (temperature < 20) {
+            document.write('Tăng nhiệt độ');
+        } else {
+            document.write('Nhiệt độ cho phép');
+        }
+         */
+
+        /* Bai 3
+        let number1 = 0,
+            number2 = 1,
+            total;
+        for (let i = 1; i <= 20; i++) {
+            document.write(number1 + '<br/>');
+            total = number1 + number2;
+            number1 = number2;
+            number2 = total;
+        }
+        */
+
+        /* Bai 5
+        let number1 = 0,
+            number2 = 1,
+            sum = 0,
+            total;
+
+        for (let i = 1; i <= 20; i++) {
+            total = number1 + number2;
+            number1 = number2;
+            number2 = total;
+            sum += number1;
+        }
+        document.write(sum);
+        */
+
+        /* Bai 6
+        let sum = 0;
+        for (let i = 0; i < 30; i++) {
+            if (i % 7 === 0) {
+                sum += i;
+            }
+        }
+        document.write(sum);
+        */
+
+        /* Bai 7
+        for (let i = 1; i <= 100; i++) {
+            if (i % 15 === 0) {
+                document.write(i + ' FizzBuzz <br/>');
+            } else if (i % 5 === 0) {
+                document.write(i + ' Buzz <br/>');
+            } else if (i % 3 === 0) {
+                document.write(i + ' Fizz <br/>');
+            }
+        }
+        */
+
+        function handlePlay() {
+            let startN = +prompt('Nhập khoảng số dự đoán bắt đầu là: ');
+            let endN = +prompt('Nhập khoảng số dự đoán kết thúc là: ');
+            let number = +prompt('Nhập số bạn muốn dự đoán là: ');
+
+            let check = startN + Math.floor(Math.random() * endN);
+
+            if (number === check) {
+                alert('Chúc mừng bạn đánh đúng');
+            } else if (number > check) {
+                alert('Số của bạn lớn hơn số dự đoán');
+            } else {
+                alert('Số của bạn nhỏ hơn số dự đoán');
+            }
+        }
+    </script>
+</html>
