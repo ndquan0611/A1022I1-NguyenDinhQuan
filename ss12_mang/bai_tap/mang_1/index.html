@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luyện tập mảng 01</title>
+</head>
+<body>
+
+</body>
+<script>
+    /* Bai 1
+    let result = [];
+    for (let i = 0; i < 10; i++) {
+        let number = +prompt(`Nhập số nguyên index ${i}: `);
+        if (number >= 10) {
+            result.push(number);
+        }
+    }
+    console.log(result);
+     */
+
+    /* Bai 2
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+
+    let max = arr[0];
+    for (let i = 0; i < arr.length ; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+    console.log(`Giá trị lớn nhất: ${max} \nVị trí của phần tử: ${arr.indexOf(max)}`)
+     */
+
+    /* Bai 3
+    let arr = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập số nguyên index ${i}: , "Stop để dừng vòng lặp"`);
+        if (number === "Stop") {
+            break;
+        }
+        arr.push(+number);
+    }
+
+    let max = arr[0];
+    let sum = 0;
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        total = sum / arr.length;
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+    console.log(`Giá trị lớn nhất: ${max} \nGiá trị trung bình: ${total}`);
+     */
+
+    /* Bai 4
+    let arr = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập số nguyên index ${i}: , "Stop để dừng vòng lặp"`);
+        if (number === "Stop") {
+            break;
+        }
+        arr.push(+number);
+    }
+    console.log(`Mảng ban đầu: ${arr} \nMảng đảo ngược: ${arr.reverse()}`);
+     */
+
+    /* Bai 5
+    let arrString = prompt("Nhập một chuỗi: ");
+    let negativeInt = 0;
+
+    for (let i = 0; i < arrString.length; i++) {
+        if (arrString[i] === 'a' || arrString[i] === 'u' || arrString[i] === 'e' || arrString[i] === 'o' || arrString[i] === 'i') {
+            negativeInt++;
+        }
+    }
+
+    console.log(`Tổng số nguyên âm trong chuỗi: ${negativeInt}`);
+    */
+
+    /* Bai 6
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+
+    let v = +prompt("Nhập số nguyên V: ");
+    if (arr.includes(v)) {
+        console.log("V is in the array");
+    } else {
+        console.log("V is not in the array");
+    }
+     */
+
+    /* Bai 7
+    let arr = [];
+    let index;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+
+    let v = +prompt("Nhập số nguyên V: ");
+    if (arr.includes(v)) {
+        index = arr.indexOf(v);
+        arr.splice(index, 1);
+        arr.push(0);
+        console.log(`${v} có trong mảng \nMảng mới là: ${arr}`)
+    } else {
+        console.log(`${v} không có trong mảng`);
+    }
+     */
+
+    /* Bai 8
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+
+    let result;
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        let max = arr[0];
+        for (let j = 1; j < arr.length; j++) {
+            if (max < arr[j]) {
+                max = arr[j];
+            }
+        }
+        index = arr.indexOf(max);
+        result = arr.splice(index, 1);
+        console.log(result + "<br/>")
+    }
+     */
+
+    /* Bai 9
+    let a = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+
+    let b = [];
+    for (let i = 0; i < 10; i++) {
+        b[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+
+    let c = a.concat(b);
+    console.log(`Giá trị mảng c: ${c}`);
+     */
+</script>
+</html>
