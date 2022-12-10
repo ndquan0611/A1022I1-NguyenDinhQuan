@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+</body>
+<script>
+    /* Bai 1
+    function doSth(a) {
+        return a * a;
+    }
+
+    doSth(+prompt("Nhập số: "));
+    */
+
+    /* Bai 2
+    // Diện tích
+    function doSth(R, PI) {
+        return R * R * PI;
+    }
+
+    doSth(+prompt("Nhập bán kính: "), 3.14);
+
+    // Chu vi
+    function doSth(R, PI) {
+        return 2 * R * PI;
+    }
+
+    doSth(+prompt("Nhập bán kính: "), 3.14);
+    */
+
+    /* Bai 3
+    function doSth(a) {
+        let result = 1;
+        for (let i = 1; i < a; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    doSth(+prompt("Nhập số: "));
+    */
+
+    /* Bai 4
+    function doSth(char) {
+        if (char === Number.isFinite(char)) {
+            console.log("Đây là ký tự số");
+        } else if (char === String(char)) {
+            console.log("Đây là ký tự chuỗi");
+        }
+    }
+
+    doSth(+prompt("Nhập ký tự: "));
+    */
+
+    /* Bai 5
+    function doSth(a, b, c) {
+        let min = a;
+        if (a > b) {
+            min = b;
+        }
+        if (a > c) {
+            min = c;
+        }
+        return min;
+    }
+
+    doSth(+prompt("Nhập số nguyên thứ 1: "),
+        +prompt("Nhập số nguyên thứ 2: "),
+        +prompt("Nhập số nguyên thứ 3: "));
+     */
+
+    /* Bai 6
+    function doSth(number) {
+        let isBoolean = false;
+        if (number > 0) {
+            isBoolean = true;
+        }
+        return isBoolean;
+    }
+    doSth(+prompt("Nhap so nguyen: "));
+    */
+
+    /* Bai 7
+    function doSth(a, b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        console.log(`Hai số nguyên sau khi đổi chỗ ${a}, ${b}`);
+    }
+    doSth(+prompt("Nhập số nguyên thứ 1: "), +prompt("Nhập số nguyên thứ 2: "));
+    */
+
+    /* Bai 8
+    let arr = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập một mảng số nguyên bất kỳ index ${i}: ,(Stop để dừng chương trình)`);
+        if (number === "Stop") {
+            break;
+        }
+        arr.push(+number);
+    }
+
+    function doSth(arr) {
+        return arr.reverse();
+    }
+    doSth(arr);
+    */
+
+    /* Bai 9
+    let arr = [];
+    for (let i = 0;  ; i++) {
+        let char = prompt(`Nhập ký tự mảng thứ 1 index ${i}: ,(Stop để dừng chương trình)`);
+        if (char === "Stop") {
+            break;
+        }
+        arr.push(char);
+    }
+
+    function doSth(arr, char) {
+        let result;
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === char) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            result = count;
+        } else {
+            result = -1;
+        }
+        console.log(result);
+    }
+
+    doSth(arr, prompt("Nhập ký tự bất kỳ: "));
+    */
+</script>
+</html>
