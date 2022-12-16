@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>Các sản phẩm: </h2>
+<p id="result"><br></p>
+<button type="button" onclick="add(arr)">Add</button>
+<button type="button" onclick="edit(arr)">Edit</button>
+<button type="button" onclick="remove(arr)">Delete</button>
+
+<script>
+    const arr = ['Sữa', 'Đường', 'Bánh', 'Kem', 'Kẹo'];
+    const result = document.getElementById('result');
+    
+    function display(arr) {
+        let product = "";
+        for (let i = 0; i < arr.length; i++) {
+            product += `${i + 1}. ${arr[i]} <br/>`;
+        }
+        return product;
+    }
+
+    function add(arr) {
+        let newArr = prompt("Nhập mặt hàng muốn thêm: ");
+        arr.push(newArr);
+        result.innerHTML = display(arr);
+    }
+
+    function edit(arr) {
+        let index = prompt("Nhập số thứ tự muốn sửa: ");
+        let newArr = prompt("Nhập tên mặt hàng thay thế: ");
+        arr[index - 1] = newArr;
+        result.innerHTML = display(arr);
+    }
+
+    function remove(arr) {
+        let index = prompt("Nhập số thứ tự muốn xóa: ");
+        arr.splice(index - 1, 1);
+        result.innerHTML = display(arr);
+    }
+
+    result.innerHTML = display(arr);
+</script>
+</body>
+</html>

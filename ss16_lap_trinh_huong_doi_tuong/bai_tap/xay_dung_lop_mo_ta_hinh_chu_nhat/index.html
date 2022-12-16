@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body style="height: 100vh; display: flex; align-items: center; justify-content: center">
+<div id="rectangle"></div>
+</body>
+<script>
+    class Rectangle {
+        constructor(long, wide) {
+            this.long = long;
+            this.wide = wide;
+        };
+
+        getArea() {
+            return this.long * this.wide;
+        };
+
+        getPerimeter() {
+            return (this.long + this.wide) * 2;
+        }
+    }
+
+    const long = +prompt('Nhập chiều dài: ');
+    const wide = +prompt('Nhập chiều rộng: ');
+    const rectangle = new Rectangle(long, wide);
+
+    // Hiển thị hình chữ nhật
+    const element = document.getElementById('rectangle');
+    Object.assign(element.style, {
+        width: rectangle.long + 'px',
+        height: rectangle.wide + 'px',
+        backgroundColor: 'black',
+        border: '1px solid #333',
+    });
+
+    // S
+    console.log(rectangle.getArea());
+    // C
+    console.log(rectangle.getPerimeter());
+</script>
+</html>
