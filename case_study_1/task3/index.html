@@ -31,6 +31,61 @@
     console.log(prefixSum);
      */
 
+    /* Bai 2
+    const arrA = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập mảng số nguyên A index ${i}: ,(Stop để dừng chương trình)`);
+        if (number === 'Stop') {
+            break;
+        }
+        arrA.push(+number);
+    }
+    console.log('Mảng A: ', arrA);
+
+    const arrB = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập mảng số nguyên B index ${i}: ,(Stop để dừng chương trình)`);
+        if (number === 'Stop') {
+            break;
+        }
+        arrB.push(+number);
+    }
+    console.log('Mảng B: ', arrB);
+
+    let arrC = [];
+    for (let i = 0; i < arrB.length; i++) {
+        if (!arrA.includes(arrB[i])) {
+            arrC.push(arrB[i]);
+        }
+    }
+    console.log('Mảng C có phần tử trong mảng B nhưng không có trong mảng A: ', arrC);
+    */
+
+    /* Bai 3
+    let numerators = [];
+    let denominators = [];
+    let arr = [];
+    let n = +prompt('Nhập độ dài của mảng');
+
+    for (let i = 0; i < n; i++) {
+        numerators[i] = +prompt(`Nhập giá trị tử số: ${i}`);
+        denominators[i] = +prompt(`Nhập giá trị phân số: ${i}`);
+        arr[i] = numerators[i] / denominators[i];
+    }
+
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+
+    let index = arr.indexOf(max);
+    document.write(`${numerators[index]} / ${denominators[index]} là phân số lớn nhất, có chỉ số ${index}`);
+    */
+
+
 
 </script>
 </html>
+
