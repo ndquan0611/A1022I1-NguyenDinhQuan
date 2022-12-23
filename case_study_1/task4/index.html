@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 4</title>
+</head>
+<body>
+</body>
+<script>
+    /* Bai 1
+    let str = prompt("Nhập tên trước khi chuẩn hóa: ").toLowerCase();
+
+    function convert(str) {
+        let strNew = '';
+        let toArr;
+        toArr = str.split(' ');
+        for (let i = 0; i < toArr.length; i++) {
+            if (toArr[i].length !== 0) {
+                strNew += toArr[i].toUpperCase().charAt(0);
+                if (toArr[i].length > 1) strNew += toArr[i].substring(1);
+                if (i < toArr.length) strNew += ' ';
+            }
+        }
+        return strNew.trim();
+    }
+
+    console.log(convert(str));
+    */
+
+
+
+    /* Bai 2
+    let str = prompt("Nhập xâu ký tự: ").toLowerCase();
+
+    function differentSymbolsNaive(str) {
+        let arr = [];
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (arr.indexOf(str[i]) === -1) {
+                arr.push(str[i]);
+                count++;
+            }
+        }
+        return `Có ${count} ký tự khác nhau ${arr.join(', ')}`;
+    }
+
+    console.log(differentSymbolsNaive(str));
+    */
+
+    let str1 = prompt("Nhập xâu ký tự 1: ").toLowerCase();
+    let str2 = prompt("Nhập xâu ký tự 2: ").toLowerCase();
+
+    function commonCharacterCount(str1, str2) {
+        const arr1 = str1.split("");
+        const arr2 = str2.split("");
+
+        const obj = {}; // key la character, value la bien dem
+        for (let i = 0; i < arr2.length; i++) {
+            const index = arr1.indexOf(arr2[i]);
+
+            if (index >= 0) {
+                if (obj[arr2[i]]) {
+                    obj[arr2[i]] += 1;
+                } else {
+                    obj[arr2[i]] = 1;
+                }
+
+                arr1.splice(index, 1);
+            }
+        }
+
+        Object.keys(obj);
+
+        console.log(obj);
+    }
+
+    commonCharacterCount(str1, str2);
+
+
+
+
+
+
+</script>
+</html>
