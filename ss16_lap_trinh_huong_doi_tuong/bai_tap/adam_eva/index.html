@@ -10,17 +10,93 @@
 <body>
 </body>
 <script>
-    const arr = [1,5,10, -2];
-    let temp = 0;
-    function swap(arr) {
-        let arrnew;
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
 
-        temp = arr[0];
-        arr[0] = arr[arr.length - 1];
-        arr[arr.length - 1] = temp;
-        arrnew = arr;
-        console.log(arrnew);
+        decrease(number) {
+            if (number <= 10) {
+                this.weight -= number;
+            } else {
+                this.weight = 0;
+            }
+        }
+
+        isEmpty() {
+            if (this.weight) {
+                return false;
+            }
+        }
+
+        getWeight() {
+            return this.weight;
+        }
     }
-    swap(arr);
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weighth = weight;
+        }
+
+        isMale() {
+            return this.gender;
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        checkApple() {
+            Apple.hasOwnProperty('weight');
+        }
+
+        eat(number) {
+            if (number <= 10) {
+                this.weighth += number;
+            } else {
+                this.weighth -= 10;
+            }
+        }
+
+        say() {
+            console.log("");
+        }
+
+        setName(newName) {
+            return this.name = newName;
+        }
+
+        setWeight(newWeight) {
+            this.weighth = newWeight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getWeight() {
+            return this.weighth;
+        }
+    }
+
+    let apple = new Apple(10);
+    let human = new Human("Meowbee", "FeMale", 50);
+
+    if (apple.hasOwnProperty('weight')) {
+        let choose = +prompt("Enter 1 to eat ");
+
+        human.eat(choose);
+        apple.decrease(choose);
+
+        console.log(`Trọng lượng của ${human.name} : ${human.weighth}`);
+        console.log(`Trọng lượng của quả táo:  ${apple.weight}`);
+        console.log(`Trọng lượng hiện tại của quả táo: ${apple.getWeight()}`);
+
+    } else {
+        console.log("Quả táo không tạo được");
+    }
 </script>
 </html>
